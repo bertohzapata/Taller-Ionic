@@ -1,5 +1,8 @@
 {
   "name": "firstApp",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "058157cd"
 }

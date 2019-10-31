@@ -6,4 +6,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card class="welcome-card" *ngFor="let denuncia of denuncias | async">
+    <img [src]="denuncia.imagen" alt="" />
+    <ion-card-header>
+      <!-- <ion-card-subtitle>{{denuncia.gravedad}}</ion-card-subtitle> -->
+      <ion-card-title>{{denuncia.descripcion}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{denuncia.estado}}</p>
+      <p>{{denuncia.fecha}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<!-- *ngFor="let denuncia of denuncias | async" -->
